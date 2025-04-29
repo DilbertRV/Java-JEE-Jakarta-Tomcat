@@ -18,17 +18,18 @@ public class HtmlServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         ServletOutputStream out = response.getOutputStream();
 
-        out.print("<!DOCTYPE html>\n" +
-                "<html lang=\"en\">\n" +
-                "<head>\n" +
-                "    <meta charset=\"UTF-8\">\n" +
-                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-                "    <title>HTML Servlet</title>\n" +
-                "</head>\n" +
-                "<body>\n" +
-                "    <h1>Hello from HTML Servlet!</h1>\n" +
-                "</body>\n" +
-                "</html>");
+        out.print("""
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>HTML Servlet</title>
+                </head>
+                <body>
+                    <h1>Hello from HTML Servlet!</h1>
+                </body>
+                </html>""");
 
         out.close();
     }
