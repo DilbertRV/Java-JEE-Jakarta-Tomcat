@@ -9,6 +9,9 @@
     <li>
         <a href="${pageContext.request.contextPath}/jsp">JSONServlet</a>
     </li>
+    <li>
+        <a href="${pageContext.request.contextPath}/jstl">JSQLServlet</a>
+    </li>
 </ul>
 </nav>
 </body>
